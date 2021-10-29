@@ -1,0 +1,160 @@
+@font-face
+{
+    font-family: 'Arial Nova';
+    src: url('../fonts/transfonter.org-20190925-085531/ArialNova-Light.woff2') format('woff2'),
+         url('../fonts/transfonter.org-20190925-085531/ArialNova-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+:root
+{
+    --main-color-rgba: RGBA(242,155,196,0.8);
+
+    --main-color-gradient: linear-gradient(+45deg, #F29BC4, #F29BC4, #674C73);
+
+    --main-color: RGB(242,155,196);
+    --contrast-color-rgba: RGBA(103,76,115,0.9);
+    --contrast-color: RGB(103,76,115);
+    --black-color: #000;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body
+{
+    margin: 1%;
+    font-family: 'Arial Nova';
+    line-height: 1.5rem;
+    margin-bottom: 6vh;
+    color: var(--black-color);
+    background-image: url(../img/base.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+h1
+{
+    padding: 5% 5%;
+    font-family: 'Lobster', cursive;
+    color: var(--main-color);
+    background-color: var(--contrast-color-rgba);
+    text-align: center;
+    line-height: 3rem;
+    font-size: 3rem;
+    border: 2px solid var(--main-color);
+    text-shadow: var(--main-color) 0 0 10px;
+    border-radius: 20px;
+    margin: 1rem 0;
+}
+
+h2, footer
+{
+    font-family: 'Lobster', cursive;
+    padding: 2% 2%;
+    color: var(--main-color);
+    background-color: var(--contrast-color-rgba);
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2rem;
+    border: 2px solid var(--main-color);
+    border-radius: 20px;
+    margin: 1rem 0;
+}
+
+.p1
+{
+    padding: 1% 1%;
+    font-size: 1.3rem;
+    line-height: 1,5;
+    text-shadow: var(--main-color) 0 0 10px;
+    border: 2px solid var(--contrast-color);
+    border-radius: 20px;
+    color: var(--black-color);
+    background: var(--main-color-gradient);
+    background-size: 400% 400%;
+    animation: gradient 5.5s ease infinite;
+}
+
+main
+{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+a:link
+{
+    color: var(--black-color);
+    text-decoration: none;
+    border-bottom: 1px dashed var(--contrast-color);
+    text-shadow: var(--main-color) 0 0 10px;
+}
+
+a:hover
+{
+    color: var(--main-color);
+    background-color: var(--contrast-color);
+    text-decoration: none;
+    border-bottom: 1px dashed var(--black-color)
+}
+
+a:visited
+{
+    color: white;
+    background-color: var(--contrast-color);
+}
+
+
+@keyframes gradient
+{
+    0% {
+    background-position: 0% 50%; }
+    50% {
+    background-position: 100% 50%; }
+    100% {
+    background-position: 0% 50%; }
+}
+
+/* FOOTER STYLE */
+footer
+{
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-top: 1rem;
+  /* position: fixed; */
+}
+
+footer .link
+{
+  text-decoration: none;
+  color: var(--main-color);
+  cursor: crosshair;
+}
+
+footer .link:hover
+{
+  color: white;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}

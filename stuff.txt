@@ -1,0 +1,31 @@
+[ DIRT ]
+[ Division of International Road Transport ]
+[Department of state policy in the field of road and urban passenger transport]
+[Ministry of transport of the Russian Federation]
+[Unofficial Web Site]
+
+[Copyright©, All rights reserved]
+
++-- client
+¦   +-- components
+¦   L-- public
++-- config
+¦   +-- common
+¦   L-- server
++-- db
++-- lib
++-- server
+¦   +-- api
+¦   ¦   L-- components
+¦   +-- models
+¦   L-- providers
+L-- test
+    +-- client
+    ¦   L-- components
+    +-- lib
+    +-- mocks
+    L-- server
+        +-- models
+        L-- providers
+    
+  

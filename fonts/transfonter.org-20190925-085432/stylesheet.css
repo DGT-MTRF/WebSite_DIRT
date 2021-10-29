@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Hisqaida 2018';
+    src: url('Hisqaida2018-Bold.woff2') format('woff2'),
+        url('Hisqaida2018-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hisqaida 2018';
+    src: url('Hisqaida2018-Bold.woff2') format('woff2'),
+        url('Hisqaida2018-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+

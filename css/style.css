@@ -1,0 +1,586 @@
+:root {
+  --secondary-color:rgba(0, 6, 255, 1);
+  --overlay-color: rgba(24, 39, 51 , 0.85);
+  --black-color: rgba(0, 0, 0, 1);
+  --menu-speed: 0.75s;
+}
+
+@font-face {
+  font-family: 'Hisqaida 2018';
+  src:
+  url('../fonts/transfonter.org-20190925-081359/Hisqaida2018-Bold.woff2') format('woff2'),
+  url('../fonts/transfonter.org-20190925-081359/Hisqaida2018-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Arial Nova';
+  src: url('../fonts/transfonter.org-20190925-085531/ArialNova-Light.woff2') format('woff2'),
+  url('../fonts/transfonter.org-20190925-085531/ArialNova-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+html
+{
+  background-color: black;
+}
+
+*, *:before, *:after  {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: calc(0.5em + 1vh);
+}
+
+body {
+  font-family: 'Arial Nova', sans-serif;
+  line-height: 1.4;
+}
+
+.section
+{
+  overflow: hidden;
+}
+
+p
+{
+  font-size: 2rem;
+}
+
+
+.head p
+{
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.container {
+  max-width: 1500px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 3rem;
+}
+
+#showcase {
+  background: var(--black-color);
+  color: #fff;
+  height: 95vh;
+  position: relative;
+}
+
+#showcase:before {
+  content: '';
+  background: var(--black-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#showcase .showcase-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  height: 95%;
+}
+
+#showcase h1 {
+  font-family: 'Hisqaida 2018', sans-serif;
+  font-size: 12em;
+}
+
+#showcase h2 {
+  font-family: 'Hisqaida 2018', sans-serif;
+  font-size: 3em;
+}
+
+.postition-bottom
+{
+  position: absolute;
+  bottom:2%;
+  left: 1%;
+}
+
+#showcase h1 span
+{
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+  -webkit-animation: animate 3s linear infinite;
+          animation: animate 3s linear infinite;
+}
+
+#showcase h1 span:nth-child(1)
+{
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+#showcase h1 span:nth-child(2)
+{
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+}
+#showcase h1 span:nth-child(3)
+{
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+#showcase h1 span:nth-child(4)
+{
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+}
+#showcase h1 span:nth-child(5)
+{
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+#showcase h1 span:nth-child(6)
+{
+  -webkit-animation-delay: 1.25s;
+          animation-delay: 1.25s;
+}
+@-webkit-keyframes animate
+{
+  0%,100%
+  {
+    color: #fff;
+    -webkit-filter: blur(2px);
+            filter: blur(2px);
+    text-shadow: 0 0 10px #fff,
+                0 0 20px #fff,
+                0 0 40px #fff,
+                0 0 80px #fff,
+                0 0 120px #fff,
+                0 0 200px #fff,
+                0 0 300px #fff,
+                0 0 400px #fff;
+  }
+  5%,95%
+  {
+    color: #000;
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    text-shadow: none;
+  }
+}
+@keyframes animate
+{
+  0%,100%
+  {
+    color: #fff;
+    -webkit-filter: blur(2px);
+            filter: blur(2px);
+    text-shadow: 0 0 10px #fff,
+                0 0 20px #fff,
+                0 0 40px #fff,
+                0 0 80px #fff,
+                0 0 120px #fff,
+                0 0 200px #fff,
+                0 0 300px #fff,
+                0 0 400px #fff;
+  }
+  5%,95%
+  {
+    color: #000;
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    text-shadow: none;
+  }
+}
+
+div.index-item:nth-child(6)
+{
+
+  margin-top: 2rem;
+}
+
+.index-item
+{
+  font-size: 2rem;
+}
+
+.index-item .link
+{
+  text-decoration: none;
+  color: white;
+  cursor: crosshair;
+}
+
+.index-item .link:hover
+{
+  background-color: white;
+  color: black;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.btn {
+  font-size: 1.5rem;
+  display: inline-block;
+  border: white solid 1px;
+  background: black;
+  color: white;
+  padding: 0.75rem 4rem;
+  margin-top: 4rem;
+  -webkit-transition: opacity 3s ease-in-out;
+  transition: opacity 3s ease-in-out;
+  text-decoration: none;
+}
+
+.btn:hover
+{
+  background: white;
+  color: black;
+  cursor: crosshair;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.ticker-wrapper
+{
+  height: 5vh;
+  line-height: 5vh;
+  position: relative;
+  overflow: hidden;
+  background: black;
+  color: white;
+}
+
+.ticker-wrapper .ticker
+{
+    display: inline-block;
+    position: absolute;
+    left: 100%;
+    white-space: nowrap;
+    padding-right: 100%;
+    -webkit-animation: ticker 20s linear infinite;
+            animation: ticker 20s linear infinite;
+}
+
+.ticker-wrapper .ticker .ticker-item
+{
+    display: inline-block;
+    padding: 0 2rem;
+    font-size: 1.5rem;
+}
+
+@-webkit-keyframes ticker {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes ticker {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+.align-left
+{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;    
+  text-align: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.page-down{
+  display: block;
+  left: 0.5%;
+  bottom: 0;
+  position: absolute;
+  color: white;
+}
+/* Menu */
+
+
+.opacity
+{
+  position: absolute;
+  background-color:rgba(255, 255, 255, 0.7);
+  color: black;
+}
+
+.opacity-z
+{
+  z-index: 99999999999;
+}
+
+.center
+{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cover
+{
+  position: absolute;
+  background-color:rgba(255, 255, 255, 0.7);
+  color: black;
+  top: 30%;
+}
+
+.black
+{
+  color: black;
+  text-decoration: none;
+  cursor: crosshair;
+}
+
+.black:hover
+{
+  background-color: black;
+  color: white;
+}
+
+video
+{
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+}
+
+.alert
+{
+  color:brown;
+}
+
+/* Player */
+audio
+{
+  padding-top: 7px;
+}
+
+/* Player [05] Page */
+.details-05
+{
+  top: 10%;
+}
+
+
+/* Убираем стандартный маркер Chrome */
+.details-05 summary::-webkit-details-marker {
+  display: none
+}
+/* Убираем стандартный маркер Firefox */
+.details-05 > summary {
+  list-style: none;
+}
+
+/* Добавляем собственный маркер для закрытого состояния */
+.details-05 summary:before {
+  content: '[+]';
+  cursor: crosshair;
+}
+
+/* Добавляем собственный маркер для открытого состояния */
+.details-05[open] summary:before {
+  content: '[-]';
+  cursor: crosshair;
+}
+
+/* Player Secret Page */
+.details-secret
+{
+  margin-left: 7%;
+  margin-top: 3%;
+}
+
+
+/* Убираем стандартный маркер Chrome */
+.details-secret summary::-webkit-details-marker {
+  display: none
+}
+/* Убираем стандартный маркер Firefox */
+.details-secret > summary {
+  list-style: none;
+}
+
+/* Добавляем собственный маркер для закрытого состояния */
+.details-secret summary:before {
+  content: '[+]';
+  cursor: crosshair;
+}
+
+/* Добавляем собственный маркер для открытого состояния */
+.details-secret[open] summary:before {
+  content: '[-]';
+  cursor: crosshair;
+}
+
+
+
+
+/* About Music */
+.by
+{
+  display: block;
+}
+
+/* Link to secret page */
+html body header#showcase h2.opacity.opacity-z a
+{
+  text-decoration: none;
+  color:black;
+  font-family: 'Hisqaida 2018', sans-serif;
+  font-size: 3rem;
+  cursor: crosshair;
+}
+
+/* Pictures */
+.picture
+{
+  width: 95%;
+  max-width: 900px;
+  margin-top: 7%;
+}
+
+/* Footer */
+footer {
+  font-family: 'Hisqaida 2018',  sans-serif;
+  font-size: 1rem;
+  color: black;
+  background-color: RGBA(255, 255, 255, 0.7);
+  width: 100%;
+  height: 7vh;
+  position: fixed;
+  left: 0; bottom: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 1%;
+
+  -webkit-box-align: center;
+
+      -ms-flex-align: center;
+
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.small-font
+{
+  font-family: 'Arial Nova', sans-serif;
+  left: 1%;
+}
+
+.medium-font
+{
+  font-family: 'Arial Nova', sans-serif;
+  font-size: 1.5rem;
+}
+
+.pt-small
+{
+  padding-top: 3%;
+
+}
+
+.absolute
+{
+  position: absolute;
+}
+
+/* Alternative footer */
+.footer
+{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: RGBA(255, 255, 255, 0);
+  position: fixed;
+  width: 100%;
+  padding-right: 1%;
+  height: 7vh;
+}
+
+.fixed
+{
+  position: fixed;
+}
+
+.center
+{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/* Grid  */
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "main"
+    "aside"
+ }
+
+ @media(min-width: 640px) {
+ .grid {
+ grid-template-columns: 500px 2fr;
+ grid-template-areas:
+
+"aside main"
+ }
+ }
+
+ .left {
+ grid-area: main;
+ }
+
+ .main {
+ grid-area: aside;
+ }
