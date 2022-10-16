@@ -9,14 +9,14 @@
 
 :root
 {
-    --main-color-rgba: RGBA(242,155,196,0.8);
+    --main-color-rgba: linear-gradient(-45deg, #13B2FA, #00080f, #00080f);
 
-    --main-color-gradient: linear-gradient(+45deg, #F29BC4, #F29BC4, #674C73);
+    --main-color-gradient: linear-gradient(-45deg, #00080f, #13B2FA, #00080f);
 
-    --main-color: RGB(242,155,196);
-    --contrast-color-rgba: RGBA(103,76,115,0.9);
-    --contrast-color: RGB(103,76,115);
-    --black-color: #000;
+    --main-color: #13B2FA;
+    --contrast-color-rgba: rgba(0, 0, 0, 0.8);
+    --contrast-color: rgba(0, 0, 0);
+    --black-color: #fff;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -44,10 +44,10 @@ body
 {
     margin: 1%;
     font-family: 'Arial Nova';
-    line-height: 1.5rem;
+    line-height: 2.5rem;
     margin-bottom: 6vh;
     color: var(--black-color);
-    background-image: url(../img/base.jpg);
+    background-color: var(--contrast-color);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -57,7 +57,7 @@ body
 h1
 {
     padding: 5% 5%;
-    font-family: 'Lobster', cursive;
+    font-family: 'Hisqaida 2018';
     color: var(--main-color);
     background-color: var(--contrast-color-rgba);
     text-align: center;
@@ -71,7 +71,7 @@ h1
 
 h2, footer
 {
-    font-family: 'Lobster', cursive;
+    font-family: 'Hisqaida 2018';
     padding: 2% 2%;
     color: var(--main-color);
     background-color: var(--contrast-color-rgba);

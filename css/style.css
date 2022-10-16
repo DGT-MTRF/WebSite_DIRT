@@ -37,6 +37,7 @@ html
 body {
   font-family: 'Arial Nova', sans-serif;
   line-height: 1.4;
+  height: 100vh;
 }
 
 .section
@@ -319,12 +320,11 @@ div.index-item:nth-child(6)
 .page-down{
   display: block;
   left: 0.5%;
-  bottom: 0;
+  bottom: 15px;
   position: absolute;
   color: white;
 }
 /* Menu */
-
 
 .opacity
 {
