@@ -1,5 +1,6 @@
 :root {
-  --secondary-color:rgba(0, 6, 255, 1);
+/*   --secondary-color:rgba(0, 6, 255, 1); */
+  --secondary-color:rgba(0, 6, 144, 1);
   --overlay-color: rgba(24, 39, 51 , 0.85);
   --black-color: rgba(0, 0, 0, 1);
   --menu-speed: 0.75s;
